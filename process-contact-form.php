@@ -38,4 +38,4 @@ if($stmt->execute()){ ?>
 }
 ?>
 <a href="user_register.php">Register as a MEMBER</a> <br>
-<a href="login_member.php">Already a member</a>
+<a href="member_login.php">Already a member</a>

@@ -15,20 +15,20 @@
             <input type="email" name="email" required /><br />
 
             <label for="categoryInterests">Category interests:</label>
-            <input type="checkbox" name="categoryInterests[]" value="1" />
+            <input type="checkbox" name="categoryInterests[]" value="Industry" />
             Industry
-            <input type="checkbox" name="categoryInterests[]" value="2" />
+            <input type="checkbox" name="categoryInterests[]" value="Technical" />
             Technical
-            <input type="checkbox" name="categoryInterests[]" value="3" /> Career
+            <input type="checkbox" name="categoryInterests[]" value="Career" /> Career
             <br />
 
             <label for="role">Your role:</label>
             <select name="role">
             ><br /><br />
 
-              <option value="1">Writer</option>
-              <option value="2">Contributor</option>
-              <option value="3">Administrator</option></select
+              <option value="Writer">Writer</option>
+              <option value="Contributor">Contributor</option>
+              <option value="Administrator">Administrator</option></select
             ><br /><br />
           </fieldset>
           <input type="submit" value="Submit" />
