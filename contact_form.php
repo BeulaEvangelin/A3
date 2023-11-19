@@ -1,7 +1,6 @@
 <?php
 //contact-form.php
 //Form that users input their data into
-//fName, lName, DOB
 //and hit submit
 ?>
       <section>
@@ -16,18 +15,20 @@
             <input type="email" name="email" required /><br />
 
             <label for="categoryInterests">Category interests:</label>
-            <input type="checkbox" name="categoryInterests" value="1" />
+            <input type="checkbox" name="categoryInterests[]" value="1" />
             Industry
-            <input type="checkbox" name="categoryInterests" value="2" />
+            <input type="checkbox" name="categoryInterests[]" value="2" />
             Technical
-            <input type="checkbox" name="categoryInterests" value="3" /> Career
+            <input type="checkbox" name="categoryInterests[]" value="3" /> Career
             <br />
 
             <label for="role">Your role:</label>
             <select name="role">
-              <option value="op1">Writer</option>
-              <option value="op2">Contributor</option>
-              <option value="op3">Administrator</option></select
+            ><br /><br />
+
+              <option value="1">Writer</option>
+              <option value="2">Contributor</option>
+              <option value="3">Administrator</option></select
             ><br /><br />
           </fieldset>
           <input type="submit" value="Submit" />
