@@ -42,4 +42,4 @@ while($row = $stmt->fetch()) {
 <?php
 }
 ?>
-<a href="process-admin-login.php">Back to all records</a>
+<a href="process-admin-login.php">Back to Admin Panel</a>

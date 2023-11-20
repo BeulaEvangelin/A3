@@ -27,3 +27,4 @@ if($stmt->execute()){
 	?><p>Could not UPDATE record</p><?php
 }
 ?>
+<a href="process-admin-login.php">Back to Admin Panel</a>

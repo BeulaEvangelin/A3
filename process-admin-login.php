@@ -1,8 +1,8 @@
 <?php session_start();
 //process-member-login.php
 //receive username and password POST variables
-$username = $_POST["username"];
-$password = $_POST["password"];
+$username = 'immRealAdmin';
+$password = 'adminIMM';
 $user_role = 'Admin';
 
 //check the database for the username and password combination
@@ -28,8 +28,7 @@ if($row = $stmt->fetch()){
     <ul>
     <li> Contact Form Submissions <a href="show-contact-form-submission.php">View</a></li>
     <li> Edit IMM About Page <a href="edit-about.php">Edit</a></li>
-
-    
+    <li></li>
     
     <?php
 }else{
