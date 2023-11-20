@@ -34,3 +34,6 @@
           <input type="submit" value="Submit" />
         </form>
       </section>
+
+<h4>Register to become a member <a href="user-register.php">Click Here</a></h4>
+<h4>Already a member? <a href="member-login.php">Login</a></h4>

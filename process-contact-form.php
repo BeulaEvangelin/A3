@@ -31,11 +31,9 @@ if($stmt->execute()){ ?>
 	<p>Name: <?=$name ?></p>
 	<p>Email: <?=$email ?></p>
 	<p>Interested Category: <?= $category_Interest ?></p>
-    <p>Your Role: <?=$role ?></p>
+    <p>Your Role: <?=$role ?></p><br>
 <?php
 }else{ 
 	?><h1>Error</h1> <?php
 }
 ?>
-<a href="user_register.php">Register as a MEMBER</a> <br>
-<a href="member_login.php">Already a member</a>
