@@ -5,7 +5,7 @@
 
 <section>
 <h1>Login</h1>
-<form name="userregister" action="process-admin-login.php" method="POST">
+<form name="adminlogin" action="process-admin-login.php" method="POST">
 <fieldset>
     <legend>Enter ADMIN username and password</legend>
 
