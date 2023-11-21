@@ -28,7 +28,7 @@ if($row = $stmt->fetch()){
     <ul>
     <li> Contact Form Submissions <a href="show-contact-form-submission.php">View</a></li>
     <li> Edit IMM About Page <a href="edit-about.php">Edit</a></li>
-    <li></li>
+    <li> Add, Edit, Delete Article <a href="select-article.php">GO</a></li>
     
     <?php
 }else{
