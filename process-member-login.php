@@ -23,7 +23,8 @@ if($row = $stmt->fetch()){
 	$_SESSION["user_Id"] = $row['user_Id'];
 	$_SESSION["username"] = $row['username'];
 	$_SESSION["loggedIn"] = true;
-	?><a href="member-articles.php">Back to IMM homepage</a><?php
+	?><a href="member-articles.php">GO to IMM homepage</a><br>
+	<?php
 }else{
 	//else show error message
 	?><p>Error. <a href="member-login.php">Try login again</p><?php
