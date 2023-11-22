@@ -1,8 +1,43 @@
 <?php
-//contact-form.php
-//Form that users input their data into
-//and hit submit
+// contact-form.php
+// Form that users input their data into
+// and hit submit
+
+$dsn = "mysql:host=localhost;dbname=immnewsnetwork;charset=utf8mb4";
+$dbusername = "root";
+$dbpassword = "";
+
+// connect
+$pdo = new PDO($dsn, $dbusername, $dbpassword);
+
+// prepare
+$stmt = $pdo->prepare("SELECT articles_page.*, COUNT(article_likes.likes) AS total_likes
+FROM articles_page
+LEFT JOIN article_likes ON articles_page.article_id = article_likes.article_id
+GROUP BY articles_page.article_id 
+");
+
+// execute
+$stmt->execute();
+
+// process results
 ?>
+<h1>IMM NEWS NETWORK</h1>
+<?php
+?><ul><?php
+while ($row = $stmt->fetch()) {
+    ?><li>
+        Likes: <?= $row["total_likes"] ?><br>
+        Category: <?= $row["category"] ?><br>
+        Title: <?= $row["title"] ?><br>
+        Author: <?= $row["author"] ?><br>
+        Content: <?= $row["content"] ?><br>
+        Featured: <?= $row["featured"] ?><br><br>
+    </li><?php
+}
+?></ul><?php
+?>
+
       <section>
         <h1>Contact</h1>
         <form name="contactPage" action="process-contact-form.php" method="POST">
